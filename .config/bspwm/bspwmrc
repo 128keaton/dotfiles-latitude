@@ -29,6 +29,7 @@ bspc config pointer_action2 resize_corner
 
 # panel
 zsh ~/.config/polybar/launch.sh
+#tint2-start &
 
 # Add twerkspaces
 bspc monitor DP-1-2-2 -d 1 2 3 4 5
@@ -42,11 +43,11 @@ bspc rule -a 'jetbrains-idea:torch-files*' desktop=2 follow=off
 
 # Gap n border
 
-bspc config window_gap 1
+bspc config window_gap 2
 bspc config border_width 2
 
 
-bspc config split_ratio 0.62
+bspc config split_ratio 0.50
 bspc config borderless_monocle true
 bspc config gapless_monocle true
 
@@ -87,3 +88,4 @@ draw() { chwb2 -I "$inner" -O "$outer" -i "2" -o "9" $* |:; }
 nm-applet &
 
 
+bspc rule -a Tint2 layer=above

@@ -26,10 +26,10 @@ include-file = ~/.config/polybar/bar-bottom.ini
 include-file = ~/.config/polybar/bar-top.ini
 
 
-
 [settings]
 screenchange-reload = true
+compositing-background = over
 
 [global/wm]
-margin-top = 0
-margin-bottom = 0
+margin-top = 5
+margin-bottom = 5

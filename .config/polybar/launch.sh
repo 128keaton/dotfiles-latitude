@@ -3,7 +3,7 @@
 sleep .5
 
 if ! pgrep -x polybar; then
-	polybar -c ~/.config/polybar/config -q bottom &  polybar -c ~/.config/polybar/config -q top &
+	polybar -c ~/.config/polybar/config -q top &
 else
 	# Kill prev polybar session
 	pkill -USR1 polybar
