@@ -1,6 +1,8 @@
 # dotfiles
 ### Made for my Dell Latitude 5590 running Ubuntu 20.04
 
+![](https://github.com/128keaton/dotfiles-latitude/blob/master/.local/share/bspwm.png?raw=true)
+
 ### Configuration
 * [Polybar](https://github.com/polybar/polybar/)
 * [dunst](https://dunst-project.org/)
