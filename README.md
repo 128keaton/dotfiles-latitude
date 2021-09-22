@@ -11,6 +11,7 @@
 * [picom](https://github.com/ibhagwan/picom) (fork with rounded corners/blur)
 * [rofi](https://github.com/davatorium/rofi)
 * [polybar-forecast](https://github.com/kamek-pf/polybar-forecast)
+* [Alacritty](https://github.com/alacritty/alacritty)
 
 ### Fonts
 

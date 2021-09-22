@@ -1,5 +1,9 @@
 #!/bin/bash
-xset +fp /home/keatonburleson/.local/share/fonts
+
+export _JAVA_AWT_WM_NONREPARENTING=1 # Java-based applications fix
+export WINIT_HIDPI_FACTOR=1.0 # Alacritty scaling fix
+
+xset +fp /home/keatonburleson/.local/share/fonts # idk Something about fonts
 xset fp rehash
 
-exec bspwm
+exec bspwm # Launch BSPWM
