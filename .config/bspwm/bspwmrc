@@ -62,7 +62,7 @@ bspc rule -a 'jetbrains-idea:torchv2*' desktop=1 follow=on
 bspc rule -a 'jetbrains-idea:torch-api*' desktop=2 follow=off
 bspc rule -a 'jetbrains-idea:torch-files*' desktop=2 follow=off
 bspc rule -a 'Polybar tray window' layer=above # Keep the Polybar tray above everything else
-
+bspc rule -a tide.exe state=floating focus=off follow=on
 #
 ## - Padding
 bspc config top_padding 0
