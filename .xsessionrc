@@ -3,4 +3,3 @@ xset +fp /home/keatonburleson/.local/share/fonts
 xset fp rehash
 
 exec bspwm
-exec --no-startup-id "upower-notify"
