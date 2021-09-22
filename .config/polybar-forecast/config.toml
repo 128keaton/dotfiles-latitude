@@ -1,6 +1,6 @@
 # Register at https://openweathermap.org to get your API key
 # If you don't want to write your key here, you can delete this line and use the OWM_API_KEY environment variable instead
-api_key = "1fd7c7683c5dfcfe1b4e692a4240880c"
+api_key = "3e2000d36313c088c9818a0010bd252d"
 
 # This is for Montreal, find your city at https://openweathermap.org
 # The id will be the last part of the URL
@@ -17,4 +17,4 @@ city_id = "4641239"
 # - forecast_kelvin
 # - forecast_fahrenheit
 # - forecast_icon
-display = "{{ temp_icon }} {{ temp_celcius }}°C {{ trend }} {{ forecast_icon }} {{ forecast_celcius }}°C"
+display = "{{ temp_icon }} {{ temp_fahrenheit }}°F {{ trend }}"

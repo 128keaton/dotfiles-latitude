@@ -1,0 +1,10 @@
+configuration {
+	theme: "./flat.rasi";
+	location: 2;
+	fixed-num-lines: false;
+	icon-theme: "Papirus";
+	display-window: "缾";
+	display-run: "";
+	display-drun: "";
+	font: "SF Pro Display Bold 12";
+}
