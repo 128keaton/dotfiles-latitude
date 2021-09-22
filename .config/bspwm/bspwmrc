@@ -46,6 +46,13 @@ then
 	picom -b  --experimental-backends
 fi
 
+
+# Start the upower-notify daemon
+if ! pgrep -x "upower-notify" > /dev/null
+then
+	upower-notify &
+fi
+
 # Start polybar
 zsh ~/.config/polybar/launch.sh
 

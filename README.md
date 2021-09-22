@@ -23,4 +23,20 @@
 
 * [autorandr](https://github.com/phillipberndt/autorandr) - Used to automatically configure screen resolution
 * [feh](https://feh.finalrewind.org/) - Used to set wallpaper
+* [upower-notify](https://github.com/omeid/upower-notify) - Used for desktop notification on power state change*
+
+
+### Notes
+
+#### Installing `upower-notify`
+
+Simply run:
+```shell
+$ go install github.com/omeid/upower-notify
+```
+
+Source: https://github.com/omeid/upower-notify/issues/3#issuecomment-494237921
+
+
+
 
