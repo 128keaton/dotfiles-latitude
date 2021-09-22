@@ -10,7 +10,7 @@ alt + i
 	/opt/jetbrains/bin/idea
 
 ctrl + alt + t
-	gnome-terminal
+	alacritty
 
 super + @space
 	~/.config/rofi/launch.sh
