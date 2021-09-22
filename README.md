@@ -16,4 +16,11 @@
 
 * Material Design Icons
 * SF Pro Display/Text
+* Sauce Code Pro Nerd Font
+
+### Other Requirements
+*These are mostly optional but you'll have to edit `bspwmrc` yourself if you don't have them.
+
+* [autorandr](https://github.com/phillipberndt/autorandr) - Used to automatically configure screen resolution
+* [feh](https://feh.finalrewind.org/) - Used to set wallpaper
 
