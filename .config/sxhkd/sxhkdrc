@@ -190,13 +190,16 @@ XF86MonBrightnessUp
 ctrl + shift + 4
 	flameshot gui -p ~/Pictures/Screenshots
 
-# Volume
+
+# Raise Volume
 XF86AudioRaiseVolume
 	pactl set-sink-volume 0 +5%   
 
+# Lower Volume
 XF86AudioLowerVolume
 	pactl set-sink-volume 0 -5%
 
+# Mute Volume
 XF86AudioMute
 	pactl set-sink-volume 0 0%
 
@@ -204,31 +207,6 @@ XF86AudioMute
 alt + Tab   
 	/home/keatonburleson/.config/rofi/alttab.sh
 
-super + F12
-	id=$(bspc query -N -n "focused");
-
-	if [ -n "$id" ]; then
-		xprop -id $id -f _SCRATCH 32ii -set _SCRATCH $(date +%s,%N);
-		bspc node -t "floating";
-		xdotool windowunmap $id;
-	fi
-
- + shift + S
-	i=$(bspc query -N -n "focused.floating");
-	if [ -n "$i" ];then
-		xprop -id $i -f _SCRATCH 32ii -set _SCRATCH $(date +%s,%N);
-		xdotool windowunmap $i;
-	else
-		i=$(for w in $(xwininfo -root -children | grep -e "^\s*0x[0-9a-f]\+" -o);do 
-		t=$(xprop -id $w _SCRATCH | grep ' = \(.*\)');
-		if [ -n "$t" ];then
-			echo $t $w;
-		fi;
-		done|sort -n|head -n1|cut -d" " -f 5);
-		if [ -n "$i" ];then 
-			xprop -id $i -remove _SCRATCH;
-			bspc rule -a \* state=floating --one-shot;
-			xdotool windowmap $i;
-			bspc node -f $i;
-		fi;
-	fi;
+# Show terminal scratchpad
+super + r ; t
+    bspwm-toggle-visibility Alacritty --take-first
