@@ -209,4 +209,4 @@ alt + Tab
 
 # Show terminal scratchpad
 super + r ; t
-    bspwm-toggle-visibility Alacritty --take-first
+    bspwm-toggle-visibility Alacritty alacritty --take-first
